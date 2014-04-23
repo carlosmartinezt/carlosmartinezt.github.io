@@ -1,0 +1,19 @@
+@{
+    varhomeNode = Model.Content.AncestorsOrSelf().First();
+}
+<ul class="none topmenu">
+  @foreach (var node in homeNode.Children.Where(n =&gt; n.GetPropertyValue("hideTopMenu") == false)) {
+    <li><a href="@node.Url">@node.Name</a> 
+    @if (node.DocumentTypeAlias == "Developments" &amp;&amp; node.Children.Any()) {
+      <div class="submenu">
+      <ul>
+         @foreach(var subNode in node.Children)
+         {
+	    <li><a href="@subNode.Url">@subNode.Name</a></li>
+         }
+      </ul>
+      </div>
+    }
+    </li>
+  }
+</ul>
