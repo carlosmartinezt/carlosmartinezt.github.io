@@ -1,19 +1,19 @@
 /*Such Cascade*/
 body { font: 16px/1.5em 'Comic Sans', 'Comic Sans MS', 'Chalkboard', 'ChalkboardSE-Regular', 'Marker Felt', 'Purisa', 'URW Chancery L', cursive; text-align: center; white-space: nowrap; transition: 0.5s ease; background: #231f20; color: #fff; text-align: center; }
 .wrap { width: 300px; height: 300px; background-size: 300px; position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; perspective: 100; }
-.wrap #icon { background-image: url('http://tryimg.com/4/firef.png'); width: 300px; height: 300px; background-size: 300px; position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; perspective: 100; opacity: 1; transform: rotateZ(0deg); transition: opacity 0.3s ease, transform 0.4s ease; }
-.wrap #doge { background-image: url('http://tryimg.com/4/fzez.png'); width: 300px; height: 300px; background-size: 300px; position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; perspective: 100; z-index: -1; opacity: 0; transform: rotateZ(-360deg); transition: opacity 0.3s ease, transform 0.5s ease; }
-.wrap p { display: inline-block; position: absolute; transform: translate3d(0,0,0); transition: 0.4s ease; left: 50px; top: 50px; opacity: 0; margin: 0; padding: 0; }
-.wrap p:nth-of-type(1) { color: red; }
-.wrap p:nth-of-type(2) { color: lightgreen; }
-.wrap p:nth-of-type(3) { color: purple; }
-.wrap p:nth-of-type(4) { color: blue; }
-.wrap p:nth-of-type(5) { color: blueviolet; }
-.wrap p:nth-of-type(6) { color: magenta; }
-.wrap p:nth-of-type(7) { color: DeepPink; }
-.wrap p:nth-of-type(8) { color: yellow; }
-.wrap p:nth-of-type(9) { color: lime; }
-.wrap p:nth-of-type(10) { color: darkorange; }
+#icon { background-image: url('http://tryimg.com/4/firef.png'); width: 300px; height: 300px; background-size: 300px; position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; perspective: 100; opacity: 1; transform: rotateZ(0deg); transition: opacity 0.3s ease, transform 0.4s ease; }
+#doge { background-image: url('http://tryimg.com/4/fzez.png'); width: 300px; height: 300px; background-size: 300px; position: fixed; top: 50%; left: 50%; margin-top: -150px; margin-left: -150px; perspective: 100; z-index: -1; opacity: 0; transform: rotateZ(-360deg); transition: opacity 0.3s ease, transform 0.5s ease; }
+p { display: inline-block; position: absolute; transform: translate3d(0,0,0); transition: 0.4s ease; left: 50px; top: 50px; opacity: 0; margin: 0; padding: 0; }
+p:nth-of-type(1) { color: red; }
+p:nth-of-type(2) { color: lightgreen; }
+p:nth-of-type(3) { color: purple; }
+p:nth-of-type(4) { color: blue; }
+p:nth-of-type(5) { color: blueviolet; }
+p:nth-of-type(6) { color: magenta; }
+p:nth-of-type(7) { color: DeepPink; }
+p:nth-of-type(8) { color: yellow; }
+p:nth-of-type(9) { color: lime; }
+p:nth-of-type(10) { color: darkorange; }
 
 /* click */
 #icon.active { opacity: 0; transform: rotateZ(360deg); transition: opacity 0.2s ease, transform 0.4s ease; }
